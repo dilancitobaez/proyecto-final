@@ -1,0 +1,115 @@
+<html>
+    <Head>
+    <title> Contacto </title>
+    </Head>
+<body id="contacto">
+<div id="titulo"><header><center><h1>Informacion de contacto</h1></header></center></div>
+
+<LINK REL=StyleSheet HREF="estilos.css" TYPE="text/css" MEDIA=screen>
+<LINK REL=StyleSheet HREF="formulario.css" TYPE="text/css" MEDIA=screen>
+<center><table border="2">
+<br>
+  <tr>
+
+    <th><h3>Nombre</h3></th>
+
+    <th><h3>Telefono</h3></th>
+
+    <th><h3>Correo Electronico</h3></th>
+	
+	<th><h3>Redes Sociales</h3></th>
+
+  </tr>
+
+  <tr>
+
+    <td><h3>Dilan Gael Ortega Baez</h3></td>
+
+    <td><h3>656123456</h3></td>
+
+    <td><h3>dilanortega14@hotmail.com</h3></td>
+	
+	<td><h3>Dilan Ortega</h3></td>
+
+  </tr>
+
+  
+
+</table><br>
+<div id="porqueelegi"><h2> Por que elegi ha Charles Babbage</h2></div>
+<p>Lo elegi por que queria agarrar un elemento que estuviera muy referido a la computacion y que mas<br>
+mejor que agarrar a un personaje que se le considera de los primeros en tener contacto con la computacion ya que <br>
+Diseñó y desarrolló una calculadora mecánica capaz de calcular tablas de funciones numéricas​ que al parecer es un diseño<br>
+muy complicado de crear, tambien algo que me llamo mucho la atencion  el creo la máquina analítica de Babbage y <br>
+fue la primera computadora de la historia</p><br>
+ 
+ 
+ 
+  <div class="contact_form">
+
+    <div class="formulario">      
+      <h1>Formulario de contacto</h1>
+        <h3>SI TIENES ALGUNA DUDA CONTACTAME</h3>
+
+
+          <form action="submeter-formulario.php" method="post">       
+
+            
+                <p>
+                  <label for="nombre" class="colocar_nombre">Nombre
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                </p>
+              
+                <p>
+                  <label for="email" class="colocar_email">Email
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                </p>
+            
+                <p>
+                  <label for="telefone" class="colocar_telefono">Teléfono
+                  </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </p>    
+              
+                <p>
+                  <label for="website" class="colocar_website">Genero
+                  </label>
+				<label for="vehicle2">Hombre</label><br>  
+                    <input type="checkbox" id="hombre" name="hombre" value="Car">
+					<label for="hombre">Mujer</label><br>
+					<input type="checkbox" id="mujer" name="mujer" value="Car">
+
+
+                </p>    
+              
+                <p>
+                  <label for="asunto" class="colocar_asunto">Asunto
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                </p>    
+              
+                <p>
+                  <label for="mensaje" class="colocar_mensaje">Mensaje
+                    <span class="obligatorio">*</span>
+                  </label>                     
+                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                </p>                    
+              
+                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+                <p class="aviso">
+                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>          
+            
+          </form>
+    </div>  
+  </div>
+
+<a id="botonregresar" href="index.html">Regresar</a></center>
+</body>
+</html>
