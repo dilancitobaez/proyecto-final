@@ -45,19 +45,32 @@ fue la primera computadora de la historia</p><br>
  
  
  
- <form method="post" action="enviar2.php">
-	<label for="nombre">Nombre:</label>
-	<input type="text" name="nombre" id="nombre"><br>
 
-	<label for="asunto">Asunto</label>
-	<input type="text" name="asunto" id="asunto"><br>
+<script>
 
-	<label for="mensaje">Mensaje: </label>
-	<textarea name="mensaje" id="mensaje"></textarea><br>
+window.onerror=new Function("return true");
+ 
+function sendMail() {
+var link = ""
++ "?cc="
++ "&subject=" + escape(document.getElementById('subject').value)
++ "&body=" + escape(document.getElementById('comment').value);
+ 
+window.location.href = "mailto:dilanortega14@hotmail.com" +link;
+}
+//]]>
+</script>
 
-	<input type="submit">
+</head>
 
-</form>
+<p>
+<center><b>Contacta:</b><br><br>
+<label>Asunto:</label><br>
+<input id="subject" type="text"><br><br>
+<label>Comentario:</label><br>
+<textarea id="comment"></textarea><br><br>
+<input type="button" value="Enviar" onclick="sendMail(); return false">
+</p>
 
 <a id="botonregresar" href="index.html">Regresar</a></center>
 </body>
